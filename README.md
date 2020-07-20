@@ -1,4 +1,4 @@
-# NSHfirstportfolio
+
 # NangShen-First Project-Portfolio
 
 "(This project worksheet copies from [original repo](https://github.com/Nangshen16/NangShen-Portfolio-/) )
@@ -17,9 +17,13 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 6| Present | Complete
 
 
-#Project Description
+
+# Project Description
+
+Deploy with Netlify and github: https://nangshenportfolio.netlify.app/
 
 We will work on First Project which is about Personal Portfolio website. It will introduce about me , my previous projects and languge skills using HTML,CSS, JavaScript ,JQuery.So we can apply Software Engineer Job. I will be using HTML, CSS(flexbox and Grid) to create content and column layout. It must be fit in Mobile,tablet and desktop responsive.
+
 
 #Google sheet
 https://docs.google.com/spreadsheets/d/1V1M3Eq1NXH2PNmeTlVviRhEjX9kenq769Vo2P5mMtro/edit#gid=0

@@ -56,3 +56,47 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
     }
+    /*console.log($)*/
+
+const formSubmit = () => {
+  console.log('Hi');
+
+    // configuration
+    // your google form URL
+    const formUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfbu_KMkbjQ3CVzbow4UlTw4ZfnuAs40I1IAV2Slh2DFzC-oA/formResponse?'
+    
+    // find tag names on Google Form
+    const nameTag = "entry.1390909308";
+    const emailTag = "entry.68648888";
+   /* const subjectTag = "entry.1605788665";*/
+    const messageTag = "entry.779367837";
+
+    // find form values via jQuery
+    const name = $('[name="name"]');
+    const email = $('[name="email"]');
+    const message = $('[name="message"]');
+    console.log(name, email, message)
+
+    // send the content via POST
+    fetch(formUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `${nameTag}=${name.val()}&${emailTag}=${email.val()}&${messageTag}=${message.val()}`
+    })
+    .then(res => {
+        // clear the fields and give the user feedback
+        console.log(res.body);
+        name.val('');
+        email.val('');
+        message.val('');
+        /*$('.confirmation').text('Your message has been sent. Thanks!') */
+        })
+    .catch(err => console.log(err))
+
+}
+
+// add event listener to button
+$('#formSubmit').on('click', formSubmit)

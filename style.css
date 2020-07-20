@@ -79,14 +79,15 @@ h3 {
     padding:20px;
 }*/
 
-@media (min-width: 1020px)
-.projects h2 {
+@media (min-width: 1020px){
+.projects h3 {
     
-    border-bottom : 3000px solid #06293e
+    border-bottom : 30px solid #06293e;
     font-size: 35px;
     border-style: inset;
     padding: 20px 15px 50px 20px;
 }
+
 h2 {
     display: block;
     position: fixed;
@@ -95,6 +96,7 @@ h2 {
     
     /*text-align: center;*/
     padding-left: 20px;
+}
 }
 /*.projects > h2 {
     color:black;
@@ -108,7 +110,7 @@ h2 {
 
 .projectsSlides {
     display: flex;
-    justify-content:center;
+    /*justify-content:center;*/
     color:rgb(56, 61, 61);
     width: 600px;
     height: auto;
@@ -245,6 +247,7 @@ h2 {
     font-size: 60px;
     color: gray;
 }
+
 /*form*/
 .contact {
     display: flex;
